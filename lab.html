@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intvice | Lab</title>
+
+    <!-- add icon link -->
+    <link rel = "icon" href = "./static/images/Logo/Asset 10.png" type = "image/x-icon">
+
+    <!-- Importing Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Adding FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Importing CSS -->
+    <link rel="stylesheet" href="./static/css/lab.css">
+
+    <!-- Scroll Reveal Library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Importing JS -->
+    <script defer src="./static/js/lab.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header flex j-fs a-c">
+        <nav class="nav flex j-sb">
+            <div class="left">
+                    <img src="./static/images/Logo/intvice.png" alt="">
+                    <p class="incubated">An IIT Incubated Company</p>
+            </div>
+            <div class="links flex a-c">
+                <ul class="flex a-c">
+                    <li><a href="/"id="homeLink">Home</a></li>
+                    <button id="wsOption">Workshop</button>
+                    <!-- <li><a href="/lab.html" target="_blank">Lab</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main style="height:auto;">
+        <section class="section1">
+            <div class="heading">
+                <p>Robotics <span>L</span>ab <span>I</span>n <span>Y</span>our <span>S</span>chool</p>
+            </div>
+            <div class="providing">
+                <div class="item a">
+                    <img src="./static/images/lab/lab.jpg">
+                    <p class="title">Free Lab Installation</p>
+                </div>
+                <div class="item b">
+                    <img src="./static/images/lab/tutor.jpg">
+                    <p class="title">No Tutor Fee</p>
+                </div>
+                <div class="item c">
+                    <img src="./static/images/lab/competition.jpg">
+                    <p class="title">3 Competions in an Year</p>
+                </div>
+                <div class="item d" >
+                    <img src="./static/images/lab/report.jpg">
+                    <p class="title">Monthly Progress Report</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer"id="footer">
+        <section class="contact flex j-c a-c">
+            <div class="about">
+                <div class="logo"><img src="./static/images/Logo/intvice.png" alt=""></div>
+                <div class="aboutContent flex j-sa">
+                    <div class="aboutData">
+                        <p class="aboutHeadings">About</p>
+                        <p style="color:lightgray;">We are commited to use innovation to lead the way in our industry, and it was our R&D which developed the world's most energy efficient IOT system.</p>
+                    </div>
+                    <div class="products">
+                        <p class="aboutHeadings">Products</p>
+                        <ul>
+                            <li>Pickme</li>
+                            <li>Astu</li>
+                        </ul>
+                    </div>
+                    <div class="contactUs">
+                        <p class="aboutHeadings">Contact</p>
+                        <ul>
+                            <li>Email: hr@intvice.com</li>
+                            <li>Mobile: +91 8168951319</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="outer flex j-c a-c">
+                <form name="contactForm" method="POST" netlify data-netlify="true" onSubmit="submit">
+                    <div class="send flex f-c j-c a-c">
+                        <p class="sendHeading">Contact</p>
+                        <input type="text" id="name"name="name" placeholder="Name"  required>
+                        <input type="email" name="email" id="email"placeholder="Email" required>
+                        <!-- <textarea name="" id="thought"name="thought" cols="30" rows="5"placeholder="Express your thoughts..."></textarea> -->
+                        <input type="text"class="thought"name="topic" id="thought"name="thought" placeholder="Topic..." required></input>
+                        <button type="submit"class="sendBtn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <section class="popUp" id="popUp">
+        <div class="popUpContainer">
+            <li><p>For&nbsp;</p><a href="/schoolWorkshop.html" target="_blank">School Student</a></li>
+            <li><p>For&nbsp;</p><a href="/collegeWorkshop.html" target="_blank">College Student</a></li>
+        </div>
+        <button id="clsBtn"><i class="fa-solid fa-circle-xmark fa-spin fa-2x" style="color: #007f00;"></i></button>
+    </section>
+    <section class="background" id="background"></section>
+</body>
+</html>
