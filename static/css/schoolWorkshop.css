@@ -1,0 +1,1573 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    padding: 0 3rem;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .left img {
+    width: 110px;
+}
+
+header .left .incubated {
+    color: white;
+    font-size: .7rem;
+    letter-spacing: 1px;
+}
+
+header .linkHover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    /* font-weight: 600; */
+}
+
+header .linkHover:hover {
+    border-bottom: 2px solid green;
+}
+
+header i {
+    color: #008000;
+}
+
+header .right {
+    display: flex;
+}
+
+header .right .download {
+    margin-right: 2rem;
+}
+
+main .firstSection {
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+main .firstSection img {
+    width: 100%;
+    position: relative;
+
+}
+
+main .firstSection .taglineContainer {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 40%;
+    height: auto;
+    border-radius: 0.2rem 0 0 0.2rem;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    /* text-align:center; */
+}
+
+main .firstSection .tagline {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #000;
+    padding-left: 2rem;
+}
+
+
+/******* Previous Workshops ********/
+main .prvWorkshop {
+    height: auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .prvWorkshop .prvHeading {
+    height: 15%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+    margin: 3rem 0;
+    font-family: "Orbitron";
+}
+
+main .prvWorkshop .tileContainer {
+    width: 76%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow-x: auto;
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+    /* border:1px solid blue; */
+    /* overflow-x:scroll ; */
+}
+
+main .prvWorkshop .tileContainer::-webkit-scrollbar {
+    display: none;
+}
+
+main .prvWorkshop .tileContainer .tiles {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border:1px solid green; */
+}
+
+main .prvWorkshop .tiles .tile {
+    width: 200px;
+    height: 270px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    /* height:100%; */
+    /* border:1px solid red; */
+    margin-left: 1rem;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+
+}
+
+main .prvWorkshop .tiles .tile img {
+    width: 100%;
+    height: 100%;
+    border-radius: .3rem;
+}
+
+
+/********** We Offer *********/
+main .weOffer {
+    height: 500px;
+    background: url('/static/images/weOffer/2.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .weOffer .box {
+    background: white;
+    height: 450px;
+    width: 300px;
+    margin: 1rem;
+    /* border:1px solid blue; */
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .weOffer .box .boxTop img {
+    /* width: 270px; */
+    width: 90%;
+    border-radius: 1rem;
+}
+main .weOffer .box .weOfferSpclImg{
+    height:270px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+main .weOffer .box .boxBottom .course {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main .weOffer .box .boxBottom .grade {
+    font-size: 1.2rem;
+    background-color: rgb(203, 255, 206);
+    color: rgb(0, 95, 0);
+    width: 90%;
+    margin: auto;
+    margin-bottom:1rem;
+    border-radius: 1rem;
+}
+
+main .weOffer .box .boxBottom .bookNowBtn {
+    margin-top: 1rem;
+    background: green;
+    border: none;
+    font-size: 1.2rem;
+    padding: .7rem 3rem;
+    color: white;
+    font-weight: bold;
+    cursor:pointer;
+    text-decoration:none;
+}
+main .weOffer .box .boxBottom .bookNowBtn:hover {
+    background: rgb(0, 152, 0);
+}
+
+
+/******* Benefits ********/
+main .benefits {
+    /* height:50vh; */
+    height: auto;
+    /* border:5px solid blue; */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .benefits .heading {
+    height: 15%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin: 3rem 0;
+    font-family: "Orbitron";
+}
+
+main .benefits .container {
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* border:1px solid blue; */
+    margin-bottom: 5rem;
+}
+
+main .benefits .container .benefit {
+    width: auto;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    /* border:1px solid green; */
+}
+
+main .benefits .container .benefit .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(10, 124, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
+}
+
+main .benefits .container .benefit .benefitName {
+    font-size: 1rem;
+    color: green;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+main .benefits .join {
+    height: 100px;
+    width: 100%;
+    /* border:1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .benefits .join a {
+    width: 20rem;
+    height: 3rem;
+    background: rgb(255, 244, 45);
+    border-radius: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 0 20px rgb(137, 152, 0);
+    margin-bottom: 2rem;
+}
+
+main .benefits .join .joinNow:hover {
+    transform: scale(1.2);
+}
+
+main .benefits .join p {
+    font-size: .8rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+
+/******* Student Projects ********/
+
+main .studentProjects {
+    height: auto;
+    /* background:rgb(231, 231, 231); */
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .studentProjects .heading {
+    height: 15%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin: 3rem 0;
+    font-family: "Orbitron";
+}
+
+main .studentProjects .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    overflow-x: auto;
+}
+
+main .studentProjects .container .tile {
+    width: 300px;
+    height: 450px;
+    /* border:1px solid red; */
+    background: transparent;
+    border-radius: .3rem;
+    margin: 1rem;
+    overflow: hidden;
+    color: white;
+    ;
+
+}
+
+main .studentProjects .container .tile .img {
+    width: 100%;
+    height: 70%;
+    transition: all .5s ease-in-out;
+    /* border:1px solid green; */
+}
+
+main .studentProjects .container .tile .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .3rem .3rem 0 0;
+}
+
+main .studentProjects .container .tile:hover .img {
+    transform: scale(1.1);
+}
+
+main .studentProjects .container .tile .content .name {
+    text-align: center;
+    font-weight: 700;
+    padding: .5rem;
+    color: green;
+}
+
+main .studentProjects .container .tile .content .desc {
+    text-align: center;
+    font-size: 1rem;
+    background-image: linear-gradient(to left, green, #6b9c7a);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.container-margin {
+    /* margin:5rem 0; */
+    padding: 5rem 0;
+    background-color: black;
+}
+
+main .container-margin .heading {
+    height: 15%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 3rem 0;
+    font-family: "Orbitron";
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(203, 203, 203, 0.8);
+}
+
+.mySlides img {
+    width: 500px;
+    height: 300px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 450px;
+    background: rgb(255, 255, 255);
+    /* border:1px solid white; */
+}
+
+.footer .contact {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer .contact .send {
+    width: 100%;
+    height: 90%;
+}
+
+.aboutHeadings {
+    font-size: 1.3rem;
+    color: green;
+}
+
+.footer .about .logo {
+    font-size: 2rem;
+    color: green;
+    font-weight: 600;
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    margin-left: 4.5rem;
+}
+
+/* .footer .contact .about .logo{
+    width:110px;
+} */
+.footer .contact .about .logo img {
+    width: 110px;
+}
+
+.footer .contact .about .aboutData {
+    width: 30%;
+    text-align: left;
+}
+
+.footer .contact .about .aboutContent {
+    margin-top: 2rem;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .contact .about {
+    width: 60%;
+    height: 90%;
+    /* border:1px solid yellow; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer .contact .about li {
+    list-style: none;
+    color: lightgray;
+}
+
+.footer .contact .about .products {
+    text-align: left;
+}
+
+.footer .contact .about .contactUs {
+    text-align: left;
+}
+
+.footer .contact .outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .contact .send {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .contact .send .sendHeading {
+    font-size: 2rem;
+    font-weight: 500;
+    color: green;
+    text-decoration: underline;
+}
+
+.footer .contact .send input {
+    width: 20rem;
+    height: 2rem;
+    border-radius: .4rem;
+    border: none;
+    outline: none;
+    margin: .5rem 0;
+    color: green;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-family: "Poppins";
+}
+
+.footer .contact .send input::placeholder {
+    font-size: .9rem;
+    font-family: 'Poppins';
+}
+
+.footer .contact .send input:focus {
+    border: 2px solid green;
+}
+
+.footer .contact .send input[type="text"].thought {
+    height: 4rem;
+    padding: .5rem;
+}
+
+.footer .contact .send textarea {
+    width: 20rem;
+    border-radius: .4rem;
+    border: none;
+    outline: none;
+    margin: .5rem 0;
+    box-sizing: border-box;
+    padding: .7rem;
+    color: green;
+    font-size: 1rem;
+    font-family: "Poppins";
+}
+
+.footer .contact .send textarea:focus {
+    border: 2px solid green;
+    box-sizing: border-box;
+}
+
+.footer .contact .send textarea::placeholder {
+    font-size: .9rem;
+    font-family: 'Poppins';
+}
+
+.footer .contact .send .sendBtn {
+    width: 7rem;
+    height: 2rem;
+    border-radius: .7rem;
+    border: none;
+    font-size: 1rem;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    transition: all .1s ease-in-out;
+
+}
+
+.footer .contact .send .sendBtn:hover {
+    width: 8rem;
+    height: 2.2rem;
+    font-size: 1.2rem;
+}
+
+.footer .contact .about .socialLinks {
+    /* border:1px solid blue; */
+    height: 20%;
+    width: 100%;
+}
+
+.footer .contact .about .socialLinks i {
+    color: lightgray;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.footer .contact .about .socialLinks i:hover {
+    color: rgb(0, 128, 0);
+}
+.footer .socialPolicy{
+    margin-bottom:2rem;
+}
+.footer .socialPolicy .policy{
+    justify-content: center;
+} 
+
+@media only screen and (max-width:1410px) {
+
+
+    main .studentProjects .container .tile {
+        width: 300px;
+        height: 450px;
+        margin: 1rem;
+
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    main .studentProjects .container .tile {
+        width: 300px;
+        height: 500px;
+        margin: 0 3rem;
+
+    }
+
+    header .linkHover {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    main .studentProjects .container .tile {
+        width: 300px;
+        height: 500px;
+        margin: 2rem 1rem 1rem 0;
+
+    }
+
+    main .studentProjects .container .tile .content .name {
+        text-align: center;
+        font-weight: 700;
+        padding: .3rem;
+        font-size: 1.5rem;
+    }
+
+    main .studentProjects .container .tile .content .desc {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    main .prvWorkshop .prvHeading {
+        font-size: 2rem;
+        margin: 2rem 0 0 0;
+    }
+
+    main .prvWorkshop .tileContainer {
+        width: 76%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow-x: auto;
+        margin: 1rem 0;
+        margin-bottom: 3rem;
+    }
+
+    main .prvWorkshop .tiles .tile {
+        width: 170px;
+        height: 240px;
+
+    }
+
+    main .firstSection .tagline {
+        font-size: 3rem;
+    }
+
+    
+    /********** We Offer *********/
+    main .weOffer {
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .weOffer .box {
+        height: 350px;
+        width: 300px;
+        margin: 1rem;
+        border-radius: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .weOffer .box .boxTop img {
+        /* width: 270px; */
+        width: 70%; 
+        border-radius: 1rem;
+    }
+    main .weOffer .box .weOfferSpclImg{
+        height:210px;
+        /* width:90%; */
+    }
+
+    main .weOffer .box .boxBottom .course {
+        margin-bottom: .7rem;
+        font-size: 1.2rem;
+    }
+
+    main .weOffer .box .boxBottom .grade {
+        font-size: 1rem;
+        width: 100%;
+        margin: auto;
+        padding:0 .5rem;
+        border-radius: 1rem;
+        margin-bottom:1rem;
+    }
+
+    main .weOffer .box .boxBottom .bookNowBtn {
+        margin-top: .7rem;
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    main .prvWorkshop .prvHeading {
+        font-size: 1.7rem;
+        color: black;
+        margin: 1.5rem 0 0 0;
+    }
+
+    main .prvWorkshop .tileContainer {
+        width: 76%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow-x: auto;
+        margin: 1rem 0;
+        /* margin-bottom:1rem; */
+    }
+
+    main .prvWorkshop .tiles .tile {
+        width: 150px;
+        height: 220px;
+
+    }
+
+    main .firstSection .tagline {
+        font-size: 2.5rem;
+        padding-left: 1rem;
+    }
+
+    header {
+        padding: 0 2rem;
+    }
+
+    header .linkHover {
+        font-size: .9rem;
+    }
+
+    /* Current Opportunity */
+    main .currentOpportunity .heading {
+        font-size: 2.2rem;
+    }
+
+    main .currentOpportunity img {
+        width: 60%;
+    }
+
+    /********** We Offer *********/
+    main .weOffer {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+    }
+
+    main .weOffer .box {
+        height: 200px;
+        width: 60%;
+        margin: 1rem;
+        border-radius: 1rem;
+        justify-content: center;
+        align-items: space-between;
+        /* flex-direction: column; */
+        flex-direction:row;
+    }
+    main .weOffer .box .boxTop{
+        width:50%;
+        height:90%;
+    }
+    main .weOffer .box .boxTop img {
+        width: 190px; 
+        border-radius: 1rem;
+    }
+    main .weOffer .box .weOfferSpclImg{
+        height:210px;
+        /* width:90%; */
+    }
+
+    main .weOffer .box .boxBottom .course {
+        margin-bottom: .7rem;
+        font-size: 1.2rem;
+    }
+
+    main .weOffer .box .boxBottom .grade {
+        font-size: 1rem;
+        width: 100%;
+        margin: auto;
+        padding:0 .5rem;
+        border-radius: 1rem;
+        margin-bottom:1rem;
+    }
+
+    main .weOffer .box .boxBottom .bookNowBtn {
+        margin-top: .7rem;
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        width: 100%;
+        height: auto;
+        background: rgb(255, 255, 255);
+        /* border:1px solid white; */
+    }
+
+    .footer .contact {
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0);
+        flex-direction: column;
+    }
+
+    .footer .contact .outer {
+        margin-bottom: 3rem;
+    }
+
+    .footer .contact .send {
+        width: 100%;
+        height: 90%;
+        order: 2;
+    }
+
+    .aboutHeadings {
+        font-size: 1.3rem;
+        color: green;
+    }
+
+    .footer .about .logo {
+        font-size: 2rem;
+        color: green;
+        font-weight: 600;
+        width: 100%;
+        height: 10%;
+        text-align: left;
+        margin: 1rem 0;
+    }
+
+    .footer .contact .about .aboutData {
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer .contact .about .aboutContent {
+        margin: 1rem 0;
+        width: 100%;
+        height: 70%;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .footer .contact .about {
+        width: 90%;
+        height: auto;
+        /* border:1px solid yellow; */
+        text-align: center;
+        /* order:1; */
+        /* flex-wrap:wrap; */
+    }
+
+    .footer .contact .about li {
+        list-style: none;
+        color: lightgray;
+    }
+
+    .footer .contact .about .products {
+        text-align: left;
+        padding: 1rem 0;
+    }
+
+    .footer .contact .about .contactUs {
+        text-align: left;
+        margin-left: 5rem;
+        padding: 1rem 0;
+    }
+
+    .footer .contact .send .sendHeading {
+        font-size: 2rem;
+        font-weight: 500;
+        color: green;
+        text-decoration: underline;
+    }
+
+    .footer .contact .send input {
+        width: 20rem;
+        height: 2rem;
+        border-radius: .4rem;
+        border: none;
+        outline: none;
+        margin: .5rem 0;
+        color: green;
+        padding-left: 1rem;
+        font-size: 1rem;
+        font-family: "Poppins";
+    }
+
+    .footer .contact .send input::placeholder {
+        font-size: .9rem;
+        font-family: 'Poppins';
+    }
+
+    .footer .contact .send input:focus {
+        border: 2px solid green;
+    }
+
+    .footer .contact .send textarea {
+        width: 20rem;
+        border-radius: .4rem;
+        border: none;
+        outline: none;
+        margin: .5rem 0;
+        box-sizing: border-box;
+        padding: .7rem;
+        color: green;
+        font-size: 1rem;
+        font-family: "Poppins";
+    }
+
+    .footer .contact .send textarea:focus {
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+
+    .footer .contact .send textarea::placeholder {
+        font-size: .9rem;
+        font-family: 'Poppins';
+    }
+
+    .footer .contact .send .sendBtn {
+        width: 7rem;
+        height: 2rem;
+        border-radius: .7rem;
+        border: none;
+        font-size: 1rem;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        margin-top: 1rem;
+        letter-spacing: 1px;
+        transition: all .1s ease-in-out;
+
+    }
+
+    .footer .contact .send .sendBtn:hover {
+        width: 8rem;
+        height: 2.2rem;
+        font-size: 1.2rem;
+    }
+
+    .footer .contact .about .socialLinks {
+        /* border:1px solid blue; */
+        height: 20%;
+        width: 100%;
+    }
+
+    .footer .contact .about .socialLinks i {
+        color: lightgray;
+        font-size: 1.3rem;
+        margin: 1rem;
+    }
+
+    .footer .contact .about .socialLinks i:hover {
+        color: rgb(0, 128, 0);
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    main .prvWorkshop .prvHeading {
+        font-size: 1.4rem;
+        margin: 1.5rem 0 0 0;
+    }
+
+    main .prvWorkshop .tileContainer {
+        height: 200px;
+        margin: 1rem 0;
+        /* margin-bottom:1rem; */
+    }
+
+    main .prvWorkshop .tiles .tile {
+        width: 110px;
+        height: 170px;
+    }
+
+    main .firstSection .tagline {
+        font-size: 2rem;
+        padding-left: .5rem;
+    }
+
+    header {
+        padding: 0 1.5rem;
+    }
+
+    header .left img {
+        width: 100px;
+    }
+
+    header .left .incubated {
+        font-size: .65rem;
+        letter-spacing: .9px;
+    }
+
+    header .linkHover {
+        font-size: .8rem;
+    }
+
+    /* Current Opportunity */
+    main .currentOpportunity .heading {
+        font-size: 2rem;
+    }
+
+    main .currentOpportunity img {
+        width: 60%;
+    }
+
+    main .studentProjects .heading {
+        font-size: 1.7rem;
+    }
+
+    /********** We Offer *********/
+
+    main .weOffer .box {
+        width: 70%;
+    }
+    main .weOffer .box .boxTop img {
+        width: 190px; 
+        border-radius: 1rem;
+    }
+    main .weOffer .box .weOfferSpclImg{
+        height:210px;
+    }
+
+    main .weOffer .box .boxBottom .bookNowBtn {
+        margin-top: .7rem;
+    }
+
+    /* Footer */
+    .footer {
+        height: auto;
+    }
+
+    .footer .contact .about .aboutContent {
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    main .firstSection .tagline {
+        font-size: 1.7rem;
+        padding-left: .3rem;
+    }
+
+    header {
+        padding: 0 1rem;
+    }
+
+    header .left img {
+        width: 100px;
+    }
+
+    header .left .incubated {
+        font-size: .65rem;
+        letter-spacing: .9px;
+    }
+
+    header .linkHover {
+        font-size: .8rem;
+    }
+
+    /* Current Opportunity */
+    main .currentOpportunity .heading {
+        font-size: 2rem;
+    }
+
+    main .currentOpportunity img {
+        width: 80%;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: 300px;
+    }
+    /********** We Offer *********/
+
+    main .weOffer .box {
+        width: 80%;
+    }
+
+    /* Footer */
+    .footer {
+        height: auto;
+    }
+
+    .footer .contact .about .aboutContent {
+        margin: 1rem 0;
+        height: auto;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .footer .contact .about .products {
+        text-align: left;
+    }
+
+    .footer .contact .about .contactUs {
+        text-align: left;
+        margin-left: 0;
+        padding: 0;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+    main .prvWorkshop .prvHeading {
+        font-size: 1.2rem;
+        margin: 1.2rem 0 0 0;
+    }
+
+    main .prvWorkshop .tileContainer {
+        height: 200px;
+        margin: 1rem 0;
+        /* margin-bottom:1rem; */
+    }
+
+    main .prvWorkshop .tiles .tile {
+        width: 100px;
+        height: 150px;
+    }
+
+    main .firstSection .tagline {
+        font-size: 1.3rem;
+        padding-left: .2rem;
+    }
+
+    header {
+        padding: 0 .5rem;
+    }
+
+    header .left img {
+        width: 85px;
+    }
+
+    header .left .incubated {
+        font-size: .6rem;
+        letter-spacing: .6px;
+    }
+
+    header .linkHover {
+        font-size: .65rem;
+    }
+
+    header .right .download {
+        margin-right: 1rem;
+    }
+
+    main .benefits .join a {
+        width: 15rem;
+
+    }
+
+    /* Current Opportunity */
+    main .currentOpportunity .heading {
+        font-size: 2rem;
+    }
+
+    main .currentOpportunity img {
+        width: 100%;
+    }
+
+    .mySlides img {
+        height: 270px;
+    }
+
+
+    /********** We Offer *********/
+
+    main .weOffer .box {
+        height: 160px;
+        width: 90%;
+    }
+    main .weOffer .box .boxTop img {
+        width: 140px; 
+        border-radius: 1rem;
+    }
+
+    main .weOffer .box .boxBottom .course {
+        font-size: 1rem;
+    }
+
+    main .weOffer .box .boxBottom .grade {
+        font-size: .8rem;
+    }
+
+    main .weOffer .box .boxBottom .bookNowBtn {
+        font-size: .9rem;
+    }
+    /* Footer */
+    .footer {
+        height: auto;
+    }
+
+    .footer .contact .about .aboutContent {
+        margin: 1rem 0;
+        height: auto;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .footer .contact .about .products {
+        text-align: left;
+    }
+
+    .footer .contact .about .contactUs {
+        text-align: left;
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width: 360px) {
+    main .prvWorkshop .prvHeading {
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
+    }
+
+    main .prvWorkshop .tileContainer {
+        height: 160px;
+        margin: .7rem 0;
+        /* margin-bottom:1rem; */
+    }
+
+    main .prvWorkshop .tiles .tile {
+        width: 80px;
+        height: 110px;
+    }
+
+    main .firstSection .tagline {
+        font-size: 1rem;
+        padding-left: .05rem;
+    }
+
+    header {
+        padding: 0 .5rem;
+    }
+
+    header .left img {
+        width: 75px;
+    }
+
+    header .left .incubated {
+        font-size: .5rem;
+        letter-spacing: .3px;
+    }
+
+    header .linkHover {
+        font-size: .6rem;
+    }
+
+    header .right .download {
+        margin-right: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        height: auto;
+    }
+
+    .footer .contact .about .aboutContent {
+        margin: 1rem 0;
+        height: auto;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .footer .contact .about .products {
+        text-align: left;
+    }
+
+    .footer .contact .about .contactUs {
+        text-align: left;
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    header {
+        padding: 0 .5rem;
+    }
+
+    header .left img {
+        width: 70px;
+    }
+
+    header .left .incubated {
+        font-size: .4rem;
+        letter-spacing: .2px;
+    }
+
+    header .linkHover {
+        font-size: .6rem;
+    }
+
+    header .right .download {
+        margin-right: .7rem;
+    }
+
+    /* Footer */
+    .footer {
+        height: auto;
+        background: rgb(255, 255, 255);
+        /* border:1px solid white; */
+    }
+
+    .footer .contact {
+        background: rgb(0, 0, 0);
+        flex-direction: column;
+    }
+
+    .footer .contact .send {
+        height: 90%;
+        order: 2;
+    }
+
+    .aboutHeadings {
+        font-size: 1.3rem;
+        color: green;
+    }
+
+    .footer .about .logo {
+        font-size: 2rem;
+        color: green;
+        font-weight: 600;
+        height: 10%;
+        text-align: left;
+        margin-left: 0rem;
+    }
+
+    .footer .contact .about .aboutData {
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer .contact .about .aboutContent {
+        margin-top: 0rem;
+        width: 100%;
+        height: 70%;
+        justify-content: start;
+    }
+
+    .footer .contact .about {
+        width: 95%;
+        height: 90%;
+        /* border:1px solid yellow; */
+        text-align: center;
+    }
+
+    .footer .contact .about li {
+        list-style: none;
+        color: lightgray;
+    }
+
+    .footer .contact .about .products {
+        text-align: left;
+    }
+
+    .footer .contact .about .contactUs {
+        text-align: left;
+    }
+
+    .footer .contact .send .sendHeading {
+        font-size: 2rem;
+        font-weight: 500;
+        color: green;
+        text-decoration: underline;
+    }
+
+    .footer .contact .send input {
+        width: 13rem;
+        height: 2rem;
+        border-radius: .4rem;
+        margin: .5rem 0;
+        padding-left: .7rem;
+        font-size: .8rem;
+    }
+
+    .footer .contact .send input::placeholder {
+        font-size: .9rem;
+    }
+
+    .footer .contact .send textarea {
+        width: 13rem;
+        height: 7rem;
+        border-radius: .4rem;
+        margin: .5rem 0;
+        padding: .5rem;
+        font-size: .8rem;
+    }
+
+    .footer .contact .send textarea:focus {
+        border: 2px solid green;
+    }
+
+    .footer .contact .send textarea::placeholder {
+        font-size: .9rem;
+    }
+
+    .footer .contact .send .sendBtn {
+        width: 7rem;
+        height: 2rem;
+        border-radius: .7rem;
+        font-size: 1rem;
+
+    }
+
+    .footer .contact .send .sendBtn:hover {
+        width: 8rem;
+        height: 2.2rem;
+        font-size: 1.2rem;
+    }
+
+    .footer .contact .about .socialLinks i {
+        color: lightgray;
+        font-size: 1.3rem;
+        margin: 1rem;
+    }
+
+}
